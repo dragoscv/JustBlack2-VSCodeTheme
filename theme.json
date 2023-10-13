@@ -1,5 +1,5 @@
 {
-    "name": "JustBlack",
+    "name": "JustBlack2",
     "type": "dark",
     "colors": {
         "activityBar.activeBorder": "#000000",
@@ -94,7 +94,7 @@
         "list.highlightForeground": "#80cbc4",
         "list.hoverBackground": "#0f111a",
         "list.hoverForeground": "#ffffff",
-        "list.inactiveSelectionBackground": "#0f111a",
+        "list.inactiveSelectionBackground": "#2d2d2d",
         "list.inactiveSelectionForeground": "#ffffff",
         "listFilterWidget.background": "#00000030",
         "listFilterWidget.noMatchesOutline": "#00000030",
@@ -165,6 +165,7 @@
         "tab.activeBorder": "#000000",
         "tab.activeForeground": "#ffffff",
         "tab.activeModifiedBorder": "#525975",
+        "tab.activeBackground": "#2d2d2d",
         "tab.border": "#000000",
         "tab.inactiveBackground": "#000000",
         "tab.inactiveForeground": "#777777",

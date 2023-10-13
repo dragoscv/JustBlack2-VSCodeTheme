@@ -1,9 +1,9 @@
 {
-  "name": "just-black",
-  "displayName": "Just Black",
-  "description": "Dark Theme With Syntax Highlighter!",
-  "version": "3.1.0",
-  "publisher": "Nur",
+  "name": "just-black2",
+  "displayName": "Just Black 2",
+  "description": "Dark Theme With Syntax Highlighter! Forked from https://github.com/nurmohammed840/extension.vsix/tree/Just-Black",
+  "version": "1.0.0",
+  "publisher": "dragoscv",
   "engines": {
     "vscode": "^1.40.0"
   },
@@ -19,14 +19,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nurmohammed840/extension.vsix/tree/Just-Black"
+    "url": "https://github.com/dragoscv/JustBlack2-VSCodeTheme"
   },
   "contributes": {
     "themes": [
       {
-        "label": "Just Black",
+        "label": "Just Black 2",
         "uiTheme": "vs-dark",
-        "path": "./JustBlack.json"
+        "path": "./theme.json"
       }
     ]
   },

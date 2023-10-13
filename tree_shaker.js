@@ -5,7 +5,7 @@ const { parse } = require("hjson");
 /** Run This Script, Before Any Pull Request. It Remove All Dead Code And Sort Color Schema. */
 async function main() {
     const
-        buffer = await fs.readFile("./JustBlack.json"),
+        buffer = await fs.readFile("./theme.json"),
         tokenColorsMultiScope = [],
         tokenColorsSingleScope = [],
         tokenColorsByStyles = {},
@@ -42,11 +42,11 @@ async function main() {
     }
 
     colorSchema.tokenColors =
-        tokenColorsSingleScope.sort((a, b) => a.scope < b.scope && -1)
+        tokenColorsSingleScope.sort((a, b) => a.scope.localeCompare(b.scope))
             .concat(tokenColorsMultiScope.sort((a, b) => a.scope.length - b.scope.length));
 
     console.timeEnd("Successful");
-    return fs.writeFile("./JustBlack.json", JSON.stringify(colorSchema, null, 4));
+    return fs.writeFile("./theme.json", JSON.stringify(colorSchema, null, 4));
 }
 
 console.time("Done");
